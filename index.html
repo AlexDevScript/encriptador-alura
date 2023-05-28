@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./assets/img/logo-alura.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Encriptador de texto - Alura Challenges ONE</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="container__logo">
+                <img src="./assets/img/logo-alura.svg" alt="logo-alura">
+            </div>
+        </header>
+
+        <main>
+            <h1>Encriptador</h1>
+            <section class="section__form">
+                <form class="form">
+                    <div class="form__container__text">
+                        <textarea rows="20" class="form__textarea" placeholder="Ingrese el texto aqui"
+                            autofocus></textarea>
+
+                        <div class="form__container__info">
+                            <img src="./assets/img/image-signo-exclamacion.svg" alt="">
+                            <p class="form__info__alert">Solo letras minúsculas y sin acentos.</p>
+                        </div>
+
+                    </div>
+                    <div class="form__container__buttons">
+                        <button type="submit" class="btn-submit">Encriptar</button>
+                        <button type="submit" class="btn-desencriptar">Desencriptar</button>
+                        <button type="button" class="btn-clear">Borrar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="section__text__encode">
+
+                <div class="container__info__encode">
+                    <figure class="container__info__encode__img">
+                        <img src="./assets/img/oracle-mas-alura.png" alt="logo oracle mas alura">
+                    </figure>
+
+                    <figure class="container__info__encode__img-two">
+                        <img src="./assets//img/image_alura.svg" alt="logo alura">
+                    </figure>
+
+                    <div class="info__encode__container">
+                        <h3 class="info__encode">Ningún mensaje fue encontrado.</h3>
+                        <p class="info__encode-two">Ingresa el texto que deseas encriptar o desencriptar.
+                    </div>
+                </div>
+
+                <div class="container__message__encode hide">
+                    <h2 class="message__encode__title">Texto decodificado</h2>
+
+                    <textarea disabled type="text" class="message__encode__output"></textarea>
+                    <button type="button" class="btn-copy">Copiar</button>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/index.js" type="module"></script>
+</body>
+
+</html>
